@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '12124605'))
-API_HASH = environ.get('API_HASH', '5cf3577d85fd02286535ec2296934287')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5867279415:AAHxI9qM4iu-v4sOl53KPYMCThNX9KQVXrQ")
+API_ID = int(environ.get('API_ID', '24108449'))
+API_HASH = environ.get('API_HASH', 'df2700e0ecd4bb3ace86c714b23fa066')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6207017947:AAEgq2pGHAjcxyBq3uCPJnR-6-Rsk5qRgTs")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,25 +37,25 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dipanshu_021:ad8920@cluster0.f7migc1.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://T2:<T2>@cluster0.ynjk1cx.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cynitev5Bot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cynitesupport')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/cynitebackup')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/cynitesupport')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Sa_movieRequest')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/sacinema2')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/sacinema2')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001797596826))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001810806290))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/cynitebackup')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cynitemovies/3')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001835326485))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001980656122))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/sacinema2')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/sacinema2/1')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001819673897))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001819673897))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001981956084))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001981956084))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
